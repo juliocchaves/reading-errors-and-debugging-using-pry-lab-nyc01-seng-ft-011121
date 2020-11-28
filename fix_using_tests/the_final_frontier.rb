@@ -1,12 +1,12 @@
 # don't forget to add: require 'pry'
 require 'pry'
-def generate_start_date
+def generate_star_date
   (rand(100000) + 400000) / 10.0
 end
 
 
-def state_log(start_date)
-  "Captain's Log, start date #{start_date}."
+def state_log(star_date)
+  "Captain's Log, star date #{star_date}."
 end
 
 def crew
@@ -18,7 +18,7 @@ def greet_crew(crew)
 end
 
 def engage
-  date = generate_start_date
-  state_log(start_date)
+  date = generate_star_date
+  state_log(star_date)
   greet_crew(crew)
 end
